@@ -204,15 +204,15 @@ class Player
 				
 				if difference[0].abs < difference [1].abs
 					if difference[1] < 0
-						rememberDirection = :left
-					else
 						rememberDirection = :right
+					else
+						rememberDirection = :left
 					end
 				else
 					if difference[0] < 0
-						rememberDirection = :backward
-					else
 						rememberDirection = :forward
+					else
+						rememberDirection = :backward
 					end
 				end
 

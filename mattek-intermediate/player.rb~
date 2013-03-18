@@ -313,7 +313,7 @@ class Player
 
 				@@direction = nextDirection
 			end
-		elsif isLosingHealth && warrior.health <= 8 && anyEscape && !anyCaptiveTicking && (anyArcher || anyWizard || anySludge)
+		elsif isLosingHealth && warrior.health <= 8 && anyEscape && !anyCaptiveTicking && (anyArcher || anyWizard || anySludge && isNear)
 			@@log.info("i am dying i'll try a retreat to #{escapeDirections[0]}!")
 			nextDirection = escapeDirections[0]
 
